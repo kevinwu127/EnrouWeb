@@ -1,0 +1,118 @@
+/*	==============================
+	GENERAL » SET THINGS UP
+	============================== */
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		/* Size */
+		font-size: 62.5%;
+		/* Style */
+		background: #eee;
+		font-family: Helvetica, sans-serif;
+		/* Position */
+		text-align: center;
+	}
+
+/*	==============================
+	GENERAL » TYPOGRAPHY
+	============================== */
+	section {
+		font-size: 1.6em;
+	}
+
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+
+	p {}
+
+	a {}
+	a:hover {}
+	a:active {}
+
+	em {}
+	blockquote {}
+
+	ul {}
+	li {}
+	ul li {}
+	ul li ul {}
+	ul li ul li {}
+
+/*	==============================
+	GENERAL » COLORS
+	============================== */
+	.colors > div {
+		font-size: 0;
+	}
+
+	.color-block {
+		display: inline-block;
+		height: 170px;
+		width: 90px;
+	}
+
+	.color-block.big {
+		width: 180px;
+	}
+
+	/* Full pallete. Some would be more primary than others. */
+	.color-block.one	{ background: #666458; }
+	.color-block.two	{ background: #036564; }
+	.color-block.three	{ background: #649089; }
+	.color-block.four	{ background: #e7dcca; }
+	.color-block.five	{ background: #cdb37f; }
+	.color-block.six	{ background: #a0adb7; }
+	.color-block.seven	{ background: #6b7985; }
+	.color-block.eight	{ background: #424254; }
+
+	.primary-color {
+		width: 250px;
+		height: 30px;
+		display: inline-block;
+	}
+
+	/* ACTION and ACCENT colors. Use for causes and initiatives. */
+	.primary-color.one		{ background: #b01e23; }
+	.primary-color.two		{ background: #d9af27; }
+	.primary-color.three	{ background: #453055; }
+
+	/* Inspiration colors */
+	.color-block.nine		{ background: #1A181F; }
+	.color-block.ten		{ background: #25707A; }
+	.color-block.eleven		{ background: #807B78; }
+	.color-block.twelve		{ background: #D4B551; }
+	.color-block.thirteen	{ background: #3E303E; }
+
+/*	==============================
+	GENERAL » FORM FIELDS
+	============================== */
+	input {}
+	button {}
+
+/*	==============================
+	GENERAL » EFFECTS
+	============================== */
+
+/*	==============================
+	GENERAL » EFFECTS
+	============================== */
+	section {
+		margin: 0 auto;
+		padding: 30px 0;
+		border-bottom: 1px solid rgba(0,0,0,.9);
+		width: 100%;
+	}
+
+	section > div {
+		margin: 0 auto;
+		padding: 0 20px;
+		max-width: 960px;
+		text-align: left;
+	}
