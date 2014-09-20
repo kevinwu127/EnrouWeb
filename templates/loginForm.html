@@ -1,0 +1,44 @@
+ <!-- Login Form Skeleton -->
+
+
+ {% form 'customer_login' %}
+      {{ form.errors | default_errors }}
+
+      <!-- FORM CONTENT HERE (email) -->
+
+      <label for="customer_email" class="label">Email Address</label>
+      <input type="email" value="" name="customer[email]" id="customer_email" class="text" />
+
+      {% if form.password_needed %}
+
+      <!-- PASSWORD ENTRY HERE -->
+
+      <label for="customer_password" class="label">Password</label>
+      <input type="password" value="" name="customer[password]" id="customer_password" class="text" size="16" />
+
+      <!-- FORGOT PASSWORD -->
+      <a href="#" onclick="showRecoverPasswordForm();return false;">Forgot your password?</a>
+      {% endif %}
+
+      <div class="action_bottom">
+        <input class="btn" type="submit" value="Sign In" />
+      </div>
+      {% endform %}
+    </div>
+    
+
+    <!-- PASSWORD RECOVERY -->
+    <div id="recover-password" style="display:none;" class="span7">
+      <h2>Reset Password</h2>
+      <p class="note">We will send you an email to reset your password.</p>
+
+      {% form 'recover_customer_password' %}
+      {{ form.errors | default_errors }}
+
+      <label for="email" class="label">Email Address</label>
+      <input type="email" value="" size="30" name="email" id="recover-email" class="text" />
+
+      <input class="btn" type="submit" value="Submit" />
+      <span class="note">or <a href="#" onclick="hideRecoverPasswordForm();return false;">Cancel</a></span>
+      {% endform %}
+    </div>
